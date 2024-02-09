@@ -1,0 +1,39 @@
+.navi-list {
+  display: flex;
+  //grid-template-columns: 100px 100px 100px 100px;
+  //color: #f0e68c;
+
+  //background-color: darkblue;
+  list-style: none;
+  text-align: center;
+  align-items: center;
+  //   justify-content: center;
+  //flex-direction: row;
+  column-gap: 20px;
+  padding-left: 180px;
+  font-size: 19px;
+  //text-transform: uppercase;
+
+  //border: 3px solid khaki;
+  letter-spacing: 0.5px;
+
+  // .navi-element {
+  //     padding: 10px;
+  // }
+}
+
+.navi-list > * {
+  flex-grow: 1;
+}
+.navi-list > li:hover {
+  background-color: gray;
+}
+
+.navi-list a {
+  color: var(--navi);
+  text-decoration: none;
+}
+
+.navi-list a.active {
+  color: #f0e68c;
+}

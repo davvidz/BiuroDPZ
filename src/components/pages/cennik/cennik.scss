@@ -1,0 +1,29 @@
+.cennik {
+  background-color: rgb(121, 117, 90);
+  height: auto;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+.cennik-table {
+  background-color: rgba(69, 80, 97, 0.329);
+  //font-size: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.5rem 2rem 1rem 2rem;
+  border: 1px solid rgb(82, 80, 80);
+}
+th {
+  font-family: "Rubik", sans-serif;
+}
+td {
+  // font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  color: rgb(23, 35, 31);
+  background-color: rgb(158, 138, 159);
+  padding: 2rem;
+}
+
+h1 {
+  padding: 1rem;
+}
