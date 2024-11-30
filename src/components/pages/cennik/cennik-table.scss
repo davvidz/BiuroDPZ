@@ -1,0 +1,17 @@
+.tabela {
+  display: flex;
+  justify-content: center;
+
+  table {
+    border-collapse: collapse;
+  }
+  th {
+    padding: 10px 20px;
+  }
+  td {
+    text-align: center;
+    min-width: 180px;
+    padding: 15px 10px;
+    border: 2px solid var(--gray);
+  }
+}

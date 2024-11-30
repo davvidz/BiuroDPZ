@@ -1,24 +1,19 @@
-.oferta {
-  background-color: rgb(194, 183, 183);
-  height: auto;
-  text-align: center;
-  // padding: 1rem 3rem 3rem 3rem;
+.container {
+  background-color: var(--cream);
+
+  h1 {
+    background-color: var(--blue-dark);
+    text-align: center;
+    margin: 0;
+    color: var(--gray);
+    padding-bottom: 20px;
+  }
 }
 
-h1 {
-  padding: 1rem;
+.oferta-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 5rem 0 7rem 0;
 }
 
-.content {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto;
-  padding-bottom: 3rem;
-}
-
-.online-text,
-.jdg-text,
-.pkpir-text,
-.ryczalt-text {
-  text-align: justify;
-}
+// Ikony autorstwa Payungkead

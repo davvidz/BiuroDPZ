@@ -1,24 +1,11 @@
-$nosowa_lawenda: rgb(155, 85, 161);
-
-// .App {
-//     height: 100vh;
-//     background-color: $nosowa_lawenda;
-// }
 :root {
-  --_bg: rgb(20, 29, 45);
-  --navi: #cdcdcd;
+  --blue-dark: rgb(20, 29, 45);
+  --gray: #cdcdcd;
+  --cream: rgb(228, 222, 222);
+  --golden-dark: rgb(170, 150, 38);
 }
 
-.wrapper {
-  display: grid;
-  width: 100vw;
+body {
   font-family: "Lato", sans-serif;
-  //height: 100%;
-  //max-width: 100%;
-  // width: auto;
-  // height: auto;
-  //display: flex;
-  //display: block;
-  //grid-template-columns: 500px;
-  //grid-template-areas: "head head head" "righ-side main left-side" "logo footer footer";
+  overflow-x: hidden;
 }

@@ -1,0 +1,86 @@
+.formularz {
+  form {
+    display: grid;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 450px;
+    font-size: 16px;
+
+    label {
+      line-height: 24px;
+      letter-spacing: 0.5px;
+      font-size: 13px;
+    }
+
+    input {
+      width: 13rem;
+      height: 30px;
+      font-size: 16px;
+    }
+
+    textarea {
+      font-size: 16px;
+      width: 27.7rem;
+    }
+
+    .form-row {
+      display: flex;
+      column-gap: 1rem;
+      padding-bottom: 0.3rem;
+
+      .form-item {
+        display: block;
+      }
+    }
+
+    .submit-button {
+      padding: 0.5rem 0;
+
+      button {
+        width: 28.1rem;
+        height: 2.5rem;
+        font-size: 15px;
+        background-color: var(--blue-dark);
+        color: white;
+        font-weight: 700;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: gold;
+        color: var(--blue-dark);
+      }
+    }
+    .rodo {
+      display: flex;
+      flex-direction: column;
+      padding: 0.5rem 0 0.3rem 0;
+
+      input {
+        width: 13px;
+        height: 13px;
+        margin: 0;
+      }
+
+      label {
+        font-size: 12px;
+        color: gray;
+        text-align: justify;
+        padding-top: 0.2rem;
+      }
+    }
+  }
+
+  .message-confirmation {
+    text-align: center;
+    padding: 0.5rem 0;
+    font-family: cursive;
+    color: rgb(56, 121, 56);
+  }
+
+  .message-failure {
+    text-align: center;
+    padding: 0.5rem 0;
+    font-family: cursive;
+    color: rgb(182, 38, 38);
+  }
+}

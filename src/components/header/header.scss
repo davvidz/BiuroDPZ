@@ -1,23 +1,9 @@
 .header {
-  //--_bg: #4c0080;
   display: flex;
-  padding-left: 50px;
-  padding-right: 50px;
-  height: 80px;
-  //display: grid;
-  //grid-template-columns: 100px 500px 200px;
-  //padding: 20px;
-  background-color: var(--_bg);
-  column-gap: 100px;
-
   position: sticky;
   top: 0;
-
-  // max-width: 100%;
-  //width: 100vw;
-  // height: auto;
-}
-
-.header > * {
-  flex-grow: 1;
+  height: 5rem;
+  justify-content: space-evenly;
+  background-color: var(--blue-dark);
+  // column-gap: 8rem;
 }

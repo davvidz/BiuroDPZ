@@ -1,9 +1,19 @@
+import { KontaktDane } from "./kontakt-dane";
+import { KontaktFormularz } from "./kontakt-formularz";
+import { KontaktZapraszamy } from "./kontakt-zapraszamy";
 import "./kontakt.scss";
 
 export const Kontakt = () => {
   return (
-    <div className="kontakt">
-      <h1>Skontaktuj się z nami</h1>
+    <div className="container">
+      <h1>Kontakt</h1>
+      <div className="kontakt-wrapper">
+        <div className="kontakt">
+          <KontaktDane />
+          <KontaktZapraszamy />
+          <KontaktFormularz />
+        </div>
+      </div>
     </div>
   );
 };

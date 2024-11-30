@@ -3,8 +3,10 @@ import "./logo.scss";
 
 export const Logo = () => {
   return (
-    <NavLink to="/">
-      <div className="logo">LOGO</div>
-    </NavLink>
+    <div className="logo-wrapper">
+      <NavLink to="/">
+        <div className="logo">TU BĘDZIE LOGO</div>
+      </NavLink>
+    </div>
   );
 };

@@ -1,5 +1,9 @@
+.logo-wrapper {
+  background-color: var(--blue-dark);
+  display: flex;
+  align-items: center;
+}
+
 .logo {
-  background-color: pink;
-  // height: 80px;
-  // width: 80px;
+  background-color: var(--gray);
 }
