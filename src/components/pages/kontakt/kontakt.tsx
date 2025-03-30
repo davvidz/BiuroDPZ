@@ -6,7 +6,6 @@ import "./kontakt.scss";
 export const Kontakt = () => {
   return (
     <div className="container">
-      <h1>Kontakt</h1>
       <div className="kontakt-wrapper">
         <div className="kontakt">
           <KontaktDane />

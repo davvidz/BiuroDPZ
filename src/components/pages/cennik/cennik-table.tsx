@@ -17,7 +17,7 @@ export const CennikTable = ({ tableData }: CennikTableProps) => {
         </thead>
         <tbody>
           {tableData.columnValue.map((item: any) => (
-            <tr>
+            <tr key={item.key}>
               <td>{item.column1}</td>
               <td>{item.column2}</td>
             </tr>

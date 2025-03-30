@@ -11,23 +11,23 @@ import i18next from "i18next";
 import { initReactI18next, useTranslation } from "react-i18next";
 import { ScrollToTop } from "./components/mainPage/scrollToTop";
 
-i18next.use(initReactI18next).init({
-  lng: "en",
-  debug: true,
-  fallbackLng: "en",
-  resources: {
-    en: {
-      translation: {
-        welcome: "hello world",
-      },
-    },
-    pl: {
-      translation: {
-        welcome: "Witaj mordo",
-      },
-    },
-  },
-});
+// i18next.use(initReactI18next).init({
+//   lng: "en",
+//   debug: true,
+//   fallbackLng: "en",
+//   resources: {
+//     en: {
+//       translation: {
+//         welcome: "hello world",
+//       },
+//     },
+//     pl: {
+//       translation: {
+//         welcome: "Witaj mordo",
+//       },
+//     },
+//   },
+// });
 
 function App() {
   const { t } = useTranslation();

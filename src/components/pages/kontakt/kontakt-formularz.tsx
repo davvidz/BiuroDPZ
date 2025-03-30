@@ -31,85 +31,29 @@ export const KontaktFormularz = () => {
     });
   };
 
-  const handleSubmit = (e: any) => {
-    e.preventDefault();
-
-    // EmailJS ID's
-    const serviceId = "service_29leswc"; // moje
-    //const serviceId = "service_9ax7ndr"; //noska
-    const templateId = "template_axbt6qt";
-    const publicKey = "3-W8b1CaFSSy2reSr";
-
-    // EmailJS template parameters
-    const templateParams = {
-      from_name: formData.firstName,
-      from_surname: formData.secondName,
-      from_email: formData.email,
-      from_number: formData.phoneNumber,
-      from_company: formData.companyName,
-      from_nip: formData.nip,
-      to_name: "Nosek noskowaty",
-      message: formData.message,
-    };
-
-    emailjs
-      .send(serviceId, templateId, templateParams, publicKey)
-      .then((response) => {
-        setMessage(messages.success);
-      })
-      .catch((error) => {
-        setMessage(messages.failure);
-      });
-
-    setFormData(initialValue);
-    setIsChecked(false);
-  };
-
   return (
     <div className="formularz">
       <h2>Skontaktuj się z nami !</h2>
-      <form onSubmit={handleSubmit}>
+      <form
+        action="https://formsubmit.co/biurodz@outlook.com"
+        method="POST"
+        className="formularz"
+      >
+        <input
+          type="hidden"
+          name="_subject"
+          value="Nowa wiadomość ze strony!"
+        />
+        <input type="hidden" name="_template" value="basic" />
+        <input type="text" name="_honey" style={{ display: "none" }} />{" "}
         <div className="form-row">
           <div className="form-item">
-            <label htmlFor="firstName">Imię</label>
-            <input
-              type="text"
-              name="firstName"
-              value={formData.firstName}
-              onChange={handleOnChange}
-              required
-            />
+            <label htmlFor="name">Imię</label>
+            <input type="text" name="name" required />
           </div>
           <div className="form-item">
-            <label htmlFor="secondName">Nazwisko</label>
-            <input
-              type="text"
-              name="secondName"
-              value={formData.secondName}
-              onChange={handleOnChange}
-              required
-            />
-          </div>
-        </div>
-        <div className="form-row">
-          <div className="form-item">
-            <label htmlFor="email">Adres e-mail</label>
-            <input
-              type="email"
-              name="email"
-              value={formData.email}
-              onChange={handleOnChange}
-              required
-            />
-          </div>
-          <div className="form-item">
-            <label htmlFor="phoneNumber">Numer telefonu</label>
-            <input
-              type="tel"
-              name="phoneNumber"
-              value={formData.phoneNumber}
-              onChange={handleOnChange}
-            />
+            <label htmlFor="email">E-mail</label>
+            <input type="email" name="email" required />
           </div>
         </div>
         <div className="form-row">
@@ -133,19 +77,12 @@ export const KontaktFormularz = () => {
           </div>
         </div>
         <label htmlFor="message">Wiadomość</label>
-        <textarea
-          name="message"
-          value={formData.message}
-          onChange={handleOnChange}
-          rows={6}
-          cols={35}
-          required
-        />
+        <textarea name="message" required rows={6}></textarea>
         <div className="rodo">
           <input
             type="checkbox"
             checked={isChecked}
-            onClick={() => setIsChecked(!isChecked)}
+            onChange={() => setIsChecked(!isChecked)}
             required
           />
           <label htmlFor="checkbox">
@@ -158,20 +95,10 @@ export const KontaktFormularz = () => {
             adres biurodz@outlook.com
           </label>
         </div>
-        <div className="submit-button">
-          <button type="submit">WYŚLIJ</button>
-        </div>
+        <button type="submit" className="button">
+          WYŚLIJ
+        </button>
       </form>
-
-      <div
-        className={
-          message === messages.success
-            ? "message-confirmation"
-            : "message-failure"
-        }
-      >
-        {message}
-      </div>
     </div>
   );
 };

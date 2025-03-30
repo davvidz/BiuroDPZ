@@ -1,13 +1,13 @@
 .zakladka {
   padding: 20px 30px;
   letter-spacing: 1px;
-  border: 2px solid var(--gray);
+  border: 1px solid var(--gray);
   border-right: 0;
   cursor: pointer;
 }
 
 .zakladka:last-child {
-  border-right: 2px solid var(--gray);
+  border-right: 1px solid var(--gray);
 }
 
 .zakladka:hover {
@@ -23,4 +23,5 @@
   border: 2px solid var(--gray);
   border-right: 0;
   cursor: pointer;
+  font-weight: 700;
 }

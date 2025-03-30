@@ -9,8 +9,7 @@ export const Cennik = () => {
   const handleClick = (index: number) => setActiveCard(index);
 
   return (
-    <div className="container">
-      <h1>Cennik</h1>
+    <div className="containerCennik">
       <div className="cennik">
         <div className="zakladki">
           <Zakladka
