@@ -2,7 +2,7 @@ import styles from "./ContactOpenHours.module.scss";
 
 export function ContactOpenHours() {
   return (
-    <div className="zapraszamy">
+    <div className={styles.zapraszamy}>
       <h2>Godziny otwarcia</h2>
       <table>
         <tbody>

@@ -1,4 +1,4 @@
-export interface TableData {
+export interface PriceListTableData {
   description: string;
   column1Name: string;
   column2Name: string;
@@ -9,7 +9,7 @@ export interface TableData {
   }[];
 }
 
-export interface OfertaItem {
+export interface ItemOffer {
   key: string;
   title: string;
   icon: string;
@@ -17,11 +17,11 @@ export interface OfertaItem {
 }
 
 export interface FormData {
-  firstName: string;
-  secondName: string;
+  name: string;
+  surname: string;
   email: string;
-  phoneNumber: any;
-  companyName: string;
-  nip: any;
+  number: string;
+  company: string;
+  nip: string;
   message: string;
 }

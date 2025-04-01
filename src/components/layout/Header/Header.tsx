@@ -1,4 +1,5 @@
 import styles from "./Header.module.scss";
+
 import { useState } from "react";
 import { Navigation } from "./components/Navigation/Navigation";
 import { Logo } from "../../ui/Logo/Logo";
@@ -13,13 +14,18 @@ export function Header() {
   };
 
   return (
-    <header className="header">
-      <div className="header-container">
+    <header className={styles.header}>
+      <div className={styles.headerContainer}>
         <Logo />
-        <button className="hamburger" onClick={toggleMenu}>
+        <button className={styles.hamburger} onClick={toggleMenu}>
           {isMenuOpen ? <FaTimes /> : <FaBars />}
         </button>
-        <div className={`nav-contact-wrapper ${isMenuOpen ? "active" : ""}`}>
+        {/* <div className={`nav-contact-wrapper ${isMenuOpen ? "active" : ""}`}> */}
+        <div
+          className={`${styles["nav-contact-wrapper"]} ${
+            isMenuOpen ? styles.active : ""
+          }`}
+        >
           <Navigation />
           <Contact />
         </div>

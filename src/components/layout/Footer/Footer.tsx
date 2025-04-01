@@ -1,13 +1,13 @@
-import { NavLink } from "react-router-dom";
 import styles from "./Footer.module.scss";
+import { NavLink } from "react-router-dom";
 import { FaFacebook } from "react-icons/fa";
 import { Logo } from "../../ui/Logo/Logo";
 
 export function Footer() {
   return (
-    <div className="footer">
-      <div className="item">
-        <div className="logo">
+    <div className={styles.footer}>
+      <div className={styles.item}>
+        <div className={styles.logo}>
           <Logo />
         </div>
         <div>Biuro Rachunkowe DPZ</div>
@@ -15,12 +15,12 @@ export function Footer() {
         <div>NIP: 7393611855</div>
         <div>REGON: 526956553</div>
       </div>
-      <div className="item">
+      <div className={styles.item}>
         <h3>Godziny otwarcia</h3>
         <div>Pon-Czw: 8:00-16:00</div>
         <div>Piątek: 8:00-15:00</div>
       </div>
-      <div className="item">
+      <div className={styles.item}>
         <h3>Kontakt</h3>
         <div>tel: 690 308 425</div>
         <div>email: biurodz@outlook.com</div>
@@ -33,7 +33,7 @@ export function Footer() {
           </NavLink>
         </div>
         <div>
-          <NavLink to={"kontakt"}>Formularz</NavLink>
+          <NavLink to={"contact"}>Formularz</NavLink>
         </div>
       </div>
     </div>

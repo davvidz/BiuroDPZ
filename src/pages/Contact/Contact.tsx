@@ -5,9 +5,9 @@ import styles from "./Contact.module.scss";
 
 export default function Contact() {
   return (
-    <div className="container">
-      <div className="kontakt-wrapper">
-        <div className="kontakt">
+    <div className={styles.container}>
+      <div className={styles.kontaktWrapper}>
+        <div className={styles.kontakt}>
           <ContactData />
           <ContactOpenHours />
           <ContactForm />

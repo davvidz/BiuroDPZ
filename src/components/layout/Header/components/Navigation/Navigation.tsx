@@ -3,20 +3,20 @@ import { NavLink } from "react-router-dom";
 
 export function Navigation() {
   return (
-    <div className="navigation">
-      <ul className="navi-list">
+    <div className={styles.navigation}>
+      <ul className={styles.naviList}>
         <li>
-          <NavLink to={"biuro"}>O biurze</NavLink>
+          <NavLink to={"office"}>O biurze</NavLink>
         </li>
         <li>
-          <NavLink to={"oferta"}>Oferta</NavLink>
+          <NavLink to={"offer"}>Oferta</NavLink>
         </li>
         <li>
-          <NavLink to={"cennik"}>Cennik</NavLink>
+          <NavLink to={"priceList"}>Cennik</NavLink>
         </li>
 
         <li>
-          <NavLink to={"kontakt"}>Kontakt</NavLink>
+          <NavLink to={"contact"}>Kontakt</NavLink>
         </li>
       </ul>
     </div>

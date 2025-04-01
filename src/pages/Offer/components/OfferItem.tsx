@@ -1,19 +1,20 @@
 import styles from "./OfferItem.module.scss";
+import { ItemOffer } from "types/types";
 
-interface OfertaItemsProps {
-  ofertaItem: OfertaItem[];
+interface OfferItemProps {
+  offerItem: ItemOffer[];
 }
 
-export function OfferItem({ ofertaItem }: OfertaItemsProps) {
+export function OfferItem({ offerItem }: OfferItemProps) {
   return (
-    <div className="oferta">
-      {ofertaItem.map((item: OfertaItem) => (
-        <div className="oferta-item">
-          <div className="title">
+    <div className={styles.offer}>
+      {offerItem.map((item: ItemOffer) => (
+        <div className={styles.offerItem}>
+          <div className={styles.title}>
             <h2>{item.title}</h2>
-            <img src={item.icon} alt="oferta-item" className="icon" />
+            <img src={item.icon} alt="oferta-item" className={styles.icon} />
           </div>
-          <div className="text">{item.text}</div>
+          <div className={styles.text}>{item.text}</div>
         </div>
       ))}
     </div>

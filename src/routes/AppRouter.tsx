@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { Suspense } from "react";
 import { routes } from "./routes";
 import { Header } from "components/layout/Header/Header";
@@ -10,7 +10,7 @@ export const AppRouter = () => {
   useScrollToTop();
 
   return (
-    <BrowserRouter>
+    <>
       <Header />
       <Suspense fallback={<LoadingSpinner />}>
         <Routes>
@@ -24,6 +24,6 @@ export const AppRouter = () => {
         </Routes>
       </Suspense>
       <Footer />
-    </BrowserRouter>
+    </>
   );
 };

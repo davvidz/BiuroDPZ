@@ -16,7 +16,7 @@ export function PriceListTab({
   const handleClick = () => onClickHandler(index);
   return (
     <div
-      className={isActive ? "zakladka-active" : "zakladka"}
+      className={isActive ? styles.zakladkaActive : styles.zakladka}
       onClick={handleClick}
     >
       {name}

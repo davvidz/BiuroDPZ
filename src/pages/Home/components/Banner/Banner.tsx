@@ -2,13 +2,13 @@ import styles from "./Banner.module.scss";
 
 export function Banner() {
   return (
-    <div className="banner-wrapper">
-      <div className="banner">
-        <div className="banner-item">
+    <div className={styles.bannerWrapper}>
+      <div className={styles.banner}>
+        <div className={styles.bannerItem}>
           <h3>Zakładanie działalności online</h3>
         </div>
-        <div className="divider" />
-        <div className="banner-item">
+        <div className={styles.divider} />
+        <div className={styles.bannerItem}>
           <h3>Kompleksowa obsługa online</h3>
         </div>
       </div>

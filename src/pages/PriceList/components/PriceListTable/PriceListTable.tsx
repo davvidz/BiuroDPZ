@@ -1,13 +1,14 @@
 import styles from "./PriceListTable.module.scss";
+import { PriceListTableData } from "types/types";
 
-interface CennikTableProps {
-  tableData: TableData;
+interface PriceListTableProps {
+  tableData: PriceListTableData;
 }
 
-export function PriceListTable({ tableData }: CennikTableProps) {
+export function PriceListTable({ tableData }: PriceListTableProps) {
   return (
-    <div className="tabela">
-      <table className="cennik-tabela">
+    <div className={styles.tabela}>
+      <table>
         <thead>
           <tr>
             <th scope="col">{tableData.column1Name}</th>

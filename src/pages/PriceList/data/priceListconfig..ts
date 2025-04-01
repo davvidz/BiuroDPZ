@@ -1,6 +1,6 @@
-import { TableData } from "../../../types/types";
+import { PriceListTableData } from "../../../types/types";
 
-export const priceListData: TableData[] = [
+export const priceListData: PriceListTableData[] = [
   {
     description: "ryczałt",
     column1Name: "Ilość dokumentów",

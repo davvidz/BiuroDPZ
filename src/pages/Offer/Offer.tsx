@@ -27,9 +27,7 @@ export default function Offer() {
     return (
       <>
         {text.map((paragraph, index) => {
-          // Sprawdzamy czy to punkt listy (linia zaczynająca się od "•")
           const isListItem = paragraph.trim().startsWith("•");
-          // Usuwamy znak • jeśli istnieje
           const cleanText = isListItem
             ? paragraph.replace("•", "").trim()
             : paragraph;
@@ -47,21 +45,21 @@ export default function Offer() {
   };
 
   return (
-    <div className="services-grid">
+    <div className={styles.servicesGrid}>
       {offerData.map((item) => {
         const isExpanded = expandedItems[item.key];
 
         return (
-          <div className="service-card" key={item.key}>
-            <div className="service-header">
-              <span className="service-icon">{item.icon}</span>
-              <h3 className="service-title">{item.title}</h3>
+          <div className={styles.serviceCard} key={item.key}>
+            <div className={styles.serviceHeader}>
+              <span className={styles.serviceIcon}>{item.icon}</span>
+              <h3 className={styles.serviceTitle}>{item.title}</h3>
             </div>
-            <div className="service-content">
+            <div className={styles.serviceContent}>
               {renderText(item.text, isExpanded)}
-              <div className="button-container">
+              <div className={styles.buttonContainer}>
                 <button
-                  className="read-more-btn"
+                  className={styles.readMoreBtn}
                   onClick={() => toggleExpand(item.key)}
                 >
                   {isExpanded ? "Zwiń" : "Dowiedz się więcej"}

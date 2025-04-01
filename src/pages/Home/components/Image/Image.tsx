@@ -1,19 +1,19 @@
 import styles from "./Image.module.scss";
-import logoPionowe from "../../../assets/images/logoPionowe.png";
+import logoPionowe from "../../../../assets/images/logoPionowe.png";
 
 export function Image() {
   return (
-    <div className="photo">
-      <div className="title">
+    <div className={styles.photo}>
+      <div className={styles.title}>
         <img
           src={logoPionowe}
           alt="Logo Biura Rachunkowego Diana Pamela Zapadka"
           loading="lazy"
-          className="responsive-logo"
+          className={styles.responsiveLogo}
         />
-        <p className="location">
-          <span className="main-text">Profesjonalne usługi księgowe</span>
-          <span className="sub-text">- z Gdańska dla całej Polski</span>
+        <p className={styles.location}>
+          <span className={styles.mainText}>Profesjonalne usługi księgowe</span>
+          <span className={styles.subText}>- z Gdańska dla całej Polski</span>
         </p>
       </div>
     </div>

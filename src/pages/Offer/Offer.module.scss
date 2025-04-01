@@ -1,4 +1,4 @@
-.services-grid {
+.servicesGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 30px;
@@ -9,7 +9,7 @@
   align-items: stretch;
 }
 
-.service-card {
+.serviceCard {
   background: #fff;
   border-radius: 10px;
   overflow: hidden;
@@ -21,7 +21,7 @@
   height: 100%;
 }
 
-.service-header {
+.serviceHeader {
   display: flex;
   align-items: center;
   background: #f8fafc;
@@ -29,7 +29,7 @@
   border-bottom: 1px solid #edf2f7;
 }
 
-.service-icon {
+.serviceIcon {
   font-size: 1.8rem;
   margin-right: 15px;
   color: #2a5c8b;
@@ -37,14 +37,14 @@
   text-align: center;
 }
 
-.service-title {
+.serviceTitle {
   color: #2a4365;
   margin: 0;
   font-size: 1.3rem;
   font-weight: 600;
 }
 
-.service-content {
+.serviceContent {
   padding: 20px;
   color: #4a5568;
   line-height: 1.6;
@@ -67,7 +67,7 @@
   }
 }
 
-.list-item {
+.listItem {
   position: relative;
   padding-left: 20px;
   margin-bottom: 8px;
@@ -81,14 +81,14 @@
   }
 }
 
-.button-container {
+.buttonContainer {
   display: flex;
   justify-content: center;
   margin-top: auto;
   padding-top: 15px;
 }
 
-.read-more-btn {
+.readMoreBtn {
   background: rgb(20, 29, 45);
   color: white;
   border: none;
@@ -108,26 +108,26 @@
 
 /* Responsywność */
 @media (max-width: 768px) {
-  .services-grid {
+  .servicesGrid {
     grid-template-columns: 1fr;
     padding: 20px;
     gap: 20px;
   }
 
-  .service-header {
+  .serviceHeader {
     padding: 15px;
   }
 
-  .service-icon {
+  .serviceIcon {
     font-size: 1.5rem;
     margin-right: 12px;
   }
 
-  .service-title {
+  .serviceTitle {
     font-size: 1.2rem;
   }
 
-  .service-content {
+  .serviceContent {
     padding: 15px;
 
     p,

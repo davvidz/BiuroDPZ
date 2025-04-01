@@ -1,6 +1,6 @@
-import { OfertaItem } from "../../../types/types";
+import { ItemOffer } from "../../../types/types";
 
-export const offerData: OfertaItem[] = [
+export const offerData: ItemOffer[] = [
   {
     key: "1",
     title: "Księgowość JDG",

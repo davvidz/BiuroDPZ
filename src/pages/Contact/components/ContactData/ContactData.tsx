@@ -1,29 +1,32 @@
 import styles from "./ContactData.module.scss";
+import location from "../../../../assets/icons/location.png";
+import iphone from "../../../../assets/icons/iphone.png";
+import mail from "../../../../assets/icons/mail.png";
 
 export function ContactData() {
   return (
-    <div className="dane">
+    <div className={styles.dane}>
       <h2>Dane kontaktowe</h2>
-      <div className="dane-item">
-        <img src="./icons/iphone.png" alt="iphone" className="icon" />
-        <div className="text">
-          <div className="title">Telefon</div>
-          <div className="value">690 308 425</div>
+      <div className={styles.daneItem}>
+        <img src={iphone} alt="iphone" className={styles.icon} />
+        <div className={styles.text}>
+          <div className={styles.title}>Telefon</div>
+          <div>690 308 425</div>
         </div>
       </div>
-      <div className="dane-item">
-        <img src="./icons/mail.png" alt="email" className="icon" />
-        <div className="text">
-          <div className="title">E-mail</div>
-          <div className="value">biurodz@outlook.com</div>
+      <div className={styles.daneItem}>
+        <img src={mail} alt="email" className={styles.icon} />
+        <div className={styles.text}>
+          <div className={styles.title}>E-mail</div>
+          <div>biurodz@outlook.com</div>
         </div>
       </div>
-      <div className="dane-item">
-        <img src="./icons/location.png" alt="location" className="icon" />
-        <div className="text">
-          <div className="title">Adres korespondencyjny</div>
-          <div className="value"> ul. Franciszka Liszta 4/10</div>
-          <div className="value">80-170 Gdańsk</div>
+      <div className={styles.daneItem}>
+        <img src={location} alt="location" className={styles.icon} />
+        <div className={styles.text}>
+          <div className={styles.title}>Adres korespondencyjny</div>
+          <div> ul. Franciszka Liszta 4/10</div>
+          <div>80-170 Gdańsk</div>
         </div>
       </div>
     </div>

@@ -5,9 +5,9 @@ import {
   FaQuoteLeft,
   FaLightbulb,
 } from "react-icons/fa";
-import poznajmnie from "../../../assets/images/poznajmnie.jpg";
-import entrance from "../../../assets/images/entrance.jpg";
-import jakpracujemy from "../../../assets/images/jakpracujemy.jpg";
+import poznajmnie from "../../assets/images/poznajmnie.jpg";
+import entrance from "../../assets/images/entrance.jpg";
+import jakpracujemy from "../../assets/images/jakpracujemy.jpg";
 
 export default function Office() {
   return (
@@ -21,9 +21,9 @@ export default function Office() {
               <p>
                 <strong>
                   Diana Pamela Zapadka
-                  <div>
-                    Księgowa | Przedsiębiorca | Założycielka Biura Rachunkowego
-                  </div>
+                  <br />
+                  Księgowa | Przedsiębiorca | Założycielka Biura Rachunkowego
+                  <br />
                 </strong>
                 <br />
                 Moja przygoda z księgowością zaczęła się klasycznie – od etatu.

@@ -10,9 +10,9 @@ export default function PriceList() {
   const handleClick = (index: number) => setActiveCard(index);
 
   return (
-    <div className="containerCennik">
-      <div className="cennik">
-        <div className="zakladki">
+    <div className={styles.containerCennik}>
+      <div className={styles.cennik}>
+        <div className={styles.zakladki}>
           <PriceListTab
             name="Ryczałt Ewidencjonowany"
             index={1}

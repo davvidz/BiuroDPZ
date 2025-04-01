@@ -1,86 +1,8 @@
-// .photo {
-//   height: 80vh;
-//   background-image: url("../../../../public/photos/businessWoman.jpg");
-//   background-size: 100vw, contain;
-//   background-repeat: no-repeat;
-//   background-position: right;
-//   background-color: rgb(163, 162, 162);
-//   background-blend-mode: multiply;
-
-//   .title {
-//     height: 100%;
-//     display: flex;
-//     //position: relative;
-//     align-items: center;
-//     justify-content: center;
-//     flex-direction: column;
-//     text-align: left;
-//     h1 {
-//       color: var(--blue-dark);
-//       color: rgb(224, 213, 213);
-//       font-size: 50px;
-
-//       font-family: "Lora", serif;
-//       //font-optical-sizing: auto;
-//       font-weight: 500;
-//       font-style: normal;
-//       margin: 0;
-//     }
-
-//     p:first-child {
-//       color: var(--blue-dark);
-//       color: white;
-//       font-size: 80px;
-
-//       font-family: "Lora", serif;
-//       //font-optical-sizing: auto;
-//       font-weight: 500;
-//       font-style: normal;
-//       margin: 0;
-//     }
-//     p {
-//       color: var(--blue-dark);
-//       color: white;
-//       font-size: 65px;
-
-//       font-family: "Lora", serif;
-//       //font-optical-sizing: auto;
-//       font-weight: 500;
-//       font-style: normal;
-//       margin: 0;
-//     }
-//     p:last-child {
-//       color: goldenrod;
-//       padding-top: 7rem;
-//       //padding-left: 3rem;
-//     }
-//   }
-// }
-
-// .responsive-logo {
-//   max-width: 100%;
-//   height: auto;
-//   display: block; /* jeśli potrzebujesz, aby logo było w osobnej linii */
-//   margin: 0 auto; /* wyśrodkowanie logo jeśli potrzebne */
-// }
-
-// @media (max-width: 768px) {
-//   .responsive-logo {
-//     max-width: 80%;
-//   }
-// }
-
-// @media (max-width: 480px) {
-//   .responsive-logo {
-//     max-width: 70%;
-//   }
-// }
-
 .photo {
   height: 100vh;
   min-height: 600px;
   max-height: 1200px;
-  background-image: url("../../../assets/images/businessWoman.jpg");
+  background-image: url("../../../../assets/images/businessWoman.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -98,7 +20,7 @@
     padding: 20px;
     box-sizing: border-box;
 
-    .responsive-logo {
+    .responsiveLogo {
       max-width: 60%;
       width: auto;
       height: auto;
@@ -124,12 +46,12 @@
   text-align: center;
   margin-top: 1.5rem;
 
-  .main-text {
+  .mainText {
     display: block;
     font-weight: 600;
   }
 
-  .sub-text {
+  .subText {
     display: block;
     font-size: 1.5rem;
     font-weight: 400;
@@ -141,7 +63,7 @@
   .location {
     font-size: 1.5rem;
 
-    .sub-text {
+    .subText {
       font-size: 1.2rem;
     }
   }
@@ -150,7 +72,7 @@
 @media (max-width: 1024px) {
   .photo {
     .title {
-      .responsive-logo {
+      .responsiveLogo {
         max-width: 70%;
       }
 
@@ -166,7 +88,7 @@
     min-height: 500px;
 
     .title {
-      .responsive-logo {
+      .responsiveLogo {
         max-width: 80%;
         max-height: 50vh;
       }
@@ -184,7 +106,7 @@
     min-height: 400px;
 
     .title {
-      .responsive-logo {
+      .responsiveLogo {
         max-width: 90%;
         max-height: 40vh;
       }

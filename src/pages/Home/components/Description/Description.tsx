@@ -1,29 +1,30 @@
+import styles from "./Description.module.scss";
 import { FaArrowRight, FaRegClock } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { FiDatabase, FiShield } from "react-icons/fi";
 
 export function Description() {
   return (
-    <div className="description-container">
-      <div className="value-blocks">
-        <div className="value-block">
-          <div className="value-icon">
+    <div className={styles.descriptionContainer}>
+      <div className={styles.valueBlocks}>
+        <div className={styles.valueBlock}>
+          <div className={styles.valueIcon}>
             <FiDatabase size={32} />
           </div>
           <h3>Kompletne rozwiązania</h3>
           <p>Pełny zakres usług księgowych</p>
         </div>
 
-        <div className="value-block">
-          <div className="value-icon">
+        <div className={styles.valueBlock}>
+          <div className={styles.valueIcon}>
             <FaRegClock size={32} />
           </div>
           <h3>Terminowość</h3>
           <p>100% dotrzymywanych terminów</p>
         </div>
 
-        <div className="value-block">
-          <div className="value-icon">
+        <div className={styles.valueBlock}>
+          <div className={styles.valueIcon}>
             <FiShield size={32} />
           </div>
           <h3>Bezpieczeństwo</h3>
@@ -31,11 +32,11 @@ export function Description() {
         </div>
       </div>
 
-      <div className="content">
-        <div className="title">
+      <div className={styles.content}>
+        <div className={styles.title}>
           <h2>Profesjonalne biuro rachunkowe dla Twojej firmy</h2>
         </div>
-        <div className="item">
+        <div className={styles.item}>
           <p>
             Jako <strong>zespół doświadczonych księgowych</strong> z Gdańska,
             oferujemy
@@ -48,10 +49,10 @@ export function Description() {
         </div>
       </div>
 
-      <div className="cta-wrapper">
-        <Link to="/kontakt" className="cta-button">
+      <div className={styles.ctaWrapper}>
+        <Link to="/contact" className={styles.ctaButton}>
           <span>Zapytaj o ofertę dla firmy</span>
-          <FaArrowRight className="cta-icon" />
+          <FaArrowRight className={styles.valueIcon} />
         </Link>
       </div>
     </div>
