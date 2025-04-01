@@ -1,0 +1,91 @@
+// .zakladka {
+//   padding: 20px 30px;
+//   letter-spacing: 1px;
+//   border: 1px solid var(--gray);
+//   border-right: 0;
+//   cursor: pointer;
+// }
+
+// .zakladka:last-child {
+//   border-right: 1px solid var(--gray);
+// }
+
+// .zakladka:hover {
+//   background-color: var(--blue-dark);
+//   color: var(--gray);
+// }
+
+// .zakladka-active {
+//   background-color: var(--blue-dark);
+//   color: var(--gray);
+//   padding: 20px 30px;
+//   letter-spacing: 1px;
+//   border: 2px solid var(--gray);
+//   border-right: 0;
+//   cursor: pointer;
+//   font-weight: 700;
+// }
+
+.zakladka {
+  padding: 20px 30px;
+  letter-spacing: 1px;
+  border: 1px solid var(--gray);
+  border-right: 0;
+  cursor: pointer;
+}
+
+.zakladka:last-child {
+  border-right: 1px solid var(--gray);
+}
+
+.zakladka:hover {
+  background-color: var(--blue-dark);
+  color: var(--gray);
+}
+
+.zakladka-active {
+  background-color: var(--blue-dark);
+  color: var(--gray);
+  padding: 20px 30px;
+  letter-spacing: 1px;
+  border: 2px solid var(--gray);
+  border-right: 0;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+@media (max-width: 992px) {
+  .zakladka,
+  .zakladka-active {
+    padding: 15px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .zakladka,
+  .zakladka-active {
+    padding: 12px 15px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .zakladki {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .zakladka,
+  .zakladka-active {
+    width: 90%;
+    margin-bottom: 5px;
+    border-right: 1px solid var(--gray);
+    text-align: center;
+    padding: 10px;
+  }
+
+  .zakladka:last-child,
+  .zakladka-active:last-child {
+    margin-bottom: 0;
+  }
+}

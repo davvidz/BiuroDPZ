@@ -1,0 +1,41 @@
+.containerCennik {
+  background-color: #fff;
+  padding: 50px 0;
+
+  h1 {
+    background-color: var(--blue-dark);
+    margin: 0;
+    color: var(--gray);
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  .cennik {
+    display: block;
+  }
+}
+
+.zakladki {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 992px) {
+  .containerCennik {
+    padding: 30px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .zakladki {
+    padding-bottom: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .containerCennik {
+    padding: 20px 0;
+  }
+}
