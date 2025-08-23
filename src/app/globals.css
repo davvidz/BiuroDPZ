@@ -1,14 +1,22 @@
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #000000;
+  --blue-dark: rgb(20, 29, 45);
+  --gray: #cdcdcd;
+  --cream: rgb(228, 222, 222);
+  --golden-dark: rgb(158, 134, 61);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --blue-dark: rgb(20, 29, 45);
+    --gray: #cdcdcd;
+    --cream: rgb(228, 222, 222);
+    --golden-dark: rgb(158, 134, 61);
   }
-}
+} */
 
 html,
 body {
@@ -35,8 +43,8 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
-}
+} */
