@@ -8,27 +8,56 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Biuro Rachunkowe Diana Pamela Zapadka</title>
+        <title>
+          Biuro Rachunkowe Diana Pamela Zapadka – Gdańsk i zdalna księgowość dla
+          całej Polski
+        </title>
         <meta
           name="description"
-          content="Profesjonalne usługi księgowe z Gdańska dla całej Polski"
+          content="Profesjonalne usługi księgowe z Gdańska i zdalna księgowość dla firm z całej Polski. Doradztwo, księgowość online i obsługa finansowa firm."
         />
+        {/* Open Graph */}
         <meta
           property="og:title"
           content="Biuro Rachunkowe Diana Pamela Zapadka"
         />
         <meta
           property="og:description"
-          content="Profesjonalne usługi księgowe z Gdańska dla całej Polski"
+          content="Profesjonalne usługi księgowe z Gdańska dla klientów z całej Polski. Doradztwo, księgowość online i obsługa finansowa firm."
         />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content="/og-image.jpg" />{" "}
+        {/* obrazek do social media */}
+        <meta property="og:url" content="https://twojadomena.pl" />
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Biuro Rachunkowe Diana Pamela Zapadka"
+        />
+        <meta
+          name="twitter:description"
+          content="Profesjonalne usługi księgowe z Gdańska dla klientów z całej Polski. Doradztwo, księgowość online i obsługa finansowa firm."
+        />
+        <meta name="twitter:image" content="/og-image.jpg" />
       </Head>
 
-      <div className={styles.main}>
-        <ImageSection />
-        <Banner />
-        <Description />
-      </div>
+      <main className={styles.main}>
+        {/* Sekcja obrazkowa */}
+        <section aria-label="Zdjęcia i grafiki biura">
+          <ImageSection />
+        </section>
+
+        {/* Baner główny */}
+        <section aria-label="Baner z ofertą biura">
+          <Banner />
+        </section>
+
+        {/* Opis usług */}
+        <section aria-label="Opis usług księgowych">
+          <Description />
+        </section>
+      </main>
     </>
   );
 }
