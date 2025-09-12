@@ -3,6 +3,7 @@ import { PriceListTableData } from "../../../types/types";
 export const priceListData: PriceListTableData[] = [
   {
     description: "ryczałt",
+    caption: "Cennik dla ryczałtu",
     column1Name: "Ilość dokumentów",
     column2Name: "Cena brutto",
     columnValue: [
@@ -70,6 +71,7 @@ export const priceListData: PriceListTableData[] = [
   },
   {
     description: "kpir",
+    caption: "Cennik dla kpir",
     column1Name: "Ilość dokumentów",
     column2Name: "Cena brutto",
     columnValue: [
@@ -137,6 +139,7 @@ export const priceListData: PriceListTableData[] = [
   },
   {
     description: "usługi dodatkowe",
+    caption: "Cennik dla usług dodatkowych",
     column1Name: "Rodzaj usługi",
     column2Name: "Cena brutto",
     columnValue: [
@@ -194,6 +197,7 @@ export const priceListData: PriceListTableData[] = [
   },
   {
     description: "kadry i płace",
+    caption: "Cennik dla kadr i płac",
     column1Name: "Rodzaj usługi",
     column2Name: "Cena brutto",
     columnValue: [

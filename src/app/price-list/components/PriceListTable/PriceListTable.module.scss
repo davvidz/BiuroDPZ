@@ -7,6 +7,14 @@
     border-collapse: collapse;
   }
 
+  .tabela table caption {
+    caption-side: top;
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    color: #2a4365;
+  }
+
   th {
     padding: 10px 20px;
     background-color: var(--blue-dark);

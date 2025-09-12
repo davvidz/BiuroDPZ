@@ -9,6 +9,7 @@ export function PriceListTable({ tableData }: PriceListTableProps) {
   return (
     <div className={styles.tabela}>
       <table>
+        <caption>{tableData.caption}</caption>
         <thead>
           <tr>
             <th scope="col">{tableData.column1Name}</th>
@@ -16,9 +17,9 @@ export function PriceListTable({ tableData }: PriceListTableProps) {
           </tr>
         </thead>
         <tbody>
-          {tableData.columnValue.map((item: any) => (
+          {tableData.columnValue.map((item) => (
             <tr key={item.key}>
-              <td>{item.column1}</td>
+              <th scope="row">{item.column1}</th>
               <td>{item.column2}</td>
             </tr>
           ))}

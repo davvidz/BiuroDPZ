@@ -1,5 +1,6 @@
 export interface PriceListTableData {
   description: string;
+  caption: string;
   column1Name: string;
   column2Name: string;
   columnValue: {

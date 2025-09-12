@@ -130,15 +130,36 @@
   }
 }
 
-@media (max-width: 768px) {
-  .valueBlocks {
-    gap: 1.5rem;
+// @media (max-width: 768px) {
+//   .valueBlocks {
+//     gap: 1.5rem;
 
-    .valueBlock {
-      min-width: 100%;
-      max-width: 400px;
-      padding: 1.5rem;
-    }
+//     .valueBlock {
+//       min-width: 100%;
+//       max-width: 400px;
+//       padding: 1.5rem;
+//     }
+//   }
+
+//   .ctaWrapper .ctaButton {
+//     padding: 0.9rem 2rem;
+//     font-size: 1rem;
+//   }
+// }
+
+@media (max-width: 768px) {
+  .valueBlocks .valueBlock {
+    min-width: 100%;
+    max-width: 400px;
+    padding: 1.5rem;
+  }
+
+  .content .title h2 {
+    font-size: 1.5rem;
+  }
+
+  .content .item p {
+    font-size: 1rem;
   }
 
   .ctaWrapper .ctaButton {
