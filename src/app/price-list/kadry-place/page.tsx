@@ -1,4 +1,4 @@
-import styles from "../price-list.module.scss";
+import styles from "./hr.module.scss";
 import { PriceListTable } from "../components/PriceListTable/PriceListTable";
 import { priceListData } from "../data/priceListconfig.";
 import type { Metadata } from "next";
@@ -34,9 +34,9 @@ export const metadata: Metadata = {
 
 export default function PriceListHR() {
   return (
-    <div className={styles.containerCennik}>
-      <h1 className={styles.pageTitle}>Cennik – Kadry i płace</h1>
-      <PriceListTable tableData={priceListData[3]} />
+    <div className={styles.containerHR}>
+      <h2 className={styles.title}>Cennik – Kadry i płace</h2>
+      <PriceListTable tableData={priceListData[3]} table="left" />
     </div>
   );
 }

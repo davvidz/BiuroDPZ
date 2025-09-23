@@ -147,3 +147,46 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    padding: 2rem 1rem;
+
+    h3 {
+      justify-content: center;
+      padding: 20px 0 15px 0;
+    }
+
+    .item {
+      width: 100%;
+      max-width: 300px;
+      margin: 0.5rem 0;
+
+      > div {
+        padding: 5px 0;
+      }
+    }
+
+    .logo {
+      margin: 0 auto 10px auto;
+    }
+
+    /* 🔥 poprawka kontaktu */
+    .contactRow {
+      justify-content: center; /* ikona + tekst na środku */
+      text-align: center;
+
+      a {
+        justify-content: center; /* link też na środek */
+      }
+    }
+
+    .socials {
+      justify-content: center; /* ikony social media na środek */
+    }
+  }
+}

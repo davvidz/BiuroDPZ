@@ -3,13 +3,16 @@ import { PriceListTableData } from "types/types";
 
 interface PriceListTableProps {
   tableData: PriceListTableData;
+  table?: "center" | "left";
 }
 
-export function PriceListTable({ tableData }: PriceListTableProps) {
+export function PriceListTable({
+  tableData,
+  table = "center",
+}: PriceListTableProps) {
   return (
-    <div className={styles.tabela}>
+    <div className={table === "center" ? styles.tabela : styles.tabela2}>
       <table>
-        <caption>{tableData.caption}</caption>
         <thead>
           <tr>
             <th scope="col">{tableData.column1Name}</th>
@@ -19,8 +22,8 @@ export function PriceListTable({ tableData }: PriceListTableProps) {
         <tbody>
           {tableData.columnValue.map((item) => (
             <tr key={item.key}>
-              <th scope="row">{item.column1}</th>
-              <td>{item.column2}</td>
+              <td className={styles.column1}>{item.column1}</td>
+              <td className={styles.column2}>{item.column2}</td>
             </tr>
           ))}
         </tbody>

@@ -10,14 +10,14 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Biuro Rachunkowe Diana Pamela Zapadka",
   description: "Profesjonalne usługi księgowe z Gdańska dla całej Polski",
-  metadataBase: new URL("https://twojadomena.pl"),
+  metadataBase: new URL("https://www.biurodpz.pl"),
   alternates: {
-    canonical: "https://twojadomena.pl",
+    canonical: "https://www.biurodpz.pl",
   },
   openGraph: {
     title: "Biuro Rachunkowe Diana Pamela Zapadka",
     description: "Profesjonalne usługi księgowe z Gdańska dla całej Polski",
-    url: "https://twojadomena.pl",
+    url: "https://www.biurodpz.pl",
     siteName: "Biuro Rachunkowe Diana Pamela Zapadka",
     images: [
       {
@@ -36,6 +36,9 @@ export const metadata: Metadata = {
     description: "Profesjonalne usługi księgowe z Gdańska dla całej Polski",
     images: ["/og-image.jpg"],
   },
+  icons: {
+    icon: "/images/logoShort.png", // 👈 favicon
+  },
 };
 
 export default function RootLayout({
@@ -46,9 +49,11 @@ export default function RootLayout({
   return (
     <html lang="pl">
       <body className={inter.className}>
-        <Header />
-        <main>{children}</main>
-        <Footer />
+        <div className="page-wrapper">
+          <Header />
+          <main className="main-content">{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
   );

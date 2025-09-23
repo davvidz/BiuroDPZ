@@ -1,7 +1,8 @@
-import styles from "../price-list.module.scss";
+import styles from "./extra.module.scss";
 import { PriceListTable } from "../components/PriceListTable/PriceListTable";
 import { priceListData } from "../data/priceListconfig.";
 import type { Metadata } from "next";
+import tableStyles from "../components/PriceListTable/PriceListTable.module.scss";
 
 export const metadata: Metadata = {
   title: "Cennik Usługi dodatkowe – Biuro Rachunkowe DPZ",
@@ -34,9 +35,11 @@ export const metadata: Metadata = {
 
 export default function PriceListExtra() {
   return (
-    <div className={styles.containerCennik}>
-      <h1 className={styles.pageTitle}>Cennik – Usługi dodatkowe</h1>
-      <PriceListTable tableData={priceListData[2]} />
+    <div className={styles.containerExtra}>
+      <h2 className={styles.title}>Cennik – Usługi dodatkowe</h2>
+      <div className={tableStyles.leftAligned}>
+        <PriceListTable tableData={priceListData[2]} table="left" />
+      </div>
     </div>
   );
 }

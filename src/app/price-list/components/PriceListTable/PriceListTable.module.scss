@@ -1,63 +1,123 @@
 .tabela {
   display: flex;
   justify-content: center;
-  overflow-x: auto; // Dodane dla przewijania na małych ekranach
+  overflow-x: auto;
 
   table {
     border-collapse: collapse;
+    width: 100%;
+    max-width: 900px;
   }
 
-  .tabela table caption {
-    caption-side: top;
-    text-align: center;
-    font-weight: 600;
-    margin: 10px 0;
-    color: #2a4365;
-  }
-
-  th {
-    padding: 10px 20px;
+  thead th {
+    padding: 12px 20px;
     background-color: var(--blue-dark);
     color: #fff;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  tbody th {
+    padding: 12px 20px;
     font-weight: 400;
+    background-color: #fff;
+    text-align: left;
+    border: 1px solid var(--gray);
   }
 
   td {
     text-align: center;
-    min-width: 180px;
-    padding: 15px 10px;
+    min-width: 180px; /* desktop */
+    padding: 12px 10px;
     border: 1px solid var(--gray);
   }
 }
 
+.tabela2 {
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 900px;
+  }
+
+  thead th {
+    padding: 12px 20px;
+    background-color: var(--blue-dark);
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  tbody th {
+    padding: 12px 20px;
+    font-weight: 400;
+    background-color: #fff;
+    text-align: left;
+    border: 1px solid var(--gray);
+  }
+
+  td {
+    text-align: left;
+    min-width: 180px; /* desktop */
+    padding: 12px 10px;
+    border: 1px solid var(--gray);
+  }
+
+  .column2 {
+    text-align: center;
+  }
+}
+
+/* ✅ Tablet */
 @media (max-width: 992px) {
-  .tabela {
-    th,
+  .tabela,
+  .tabela2 {
+    thead th,
+    tbody th,
     td {
-      padding: 8px 15px;
+      padding: 8px 10px;
     }
   }
 }
 
+/* ✅ Mobile średnie */
 @media (max-width: 768px) {
-  .tabela {
-    th,
+  .tabela,
+  .tabela2 {
+    thead th,
+    tbody th,
     td {
-      padding: 6px 10px;
-      font-size: 14px;
+      padding: 6px 6px;
+      font-size: 13px;
+      min-width: 140px; /* 🔥 węższe kolumny */
+      white-space: normal; /* 🔥 tekst może się łamać */
+      word-break: break-word;
     }
   }
 }
 
+/* ✅ Mobile małe */
 @media (max-width: 576px) {
-  .tabela {
+  .tabela,
+  .tabela2 {
     display: block;
     width: 100%;
     margin: 0 auto;
 
     table {
       width: 100%;
-      min-width: 500px; // Wymusza przewijanie na bardzo małych ekranach
+    }
+
+    thead th,
+    tbody th,
+    td {
+      font-size: 12px;
+      padding: 4px;
+      min-width: 120px; /* 🔥 jeszcze węższe */
     }
   }
 }

@@ -1,4 +1,4 @@
-import styles from "../price-list.module.scss";
+import styles from "./ryczalt.module.scss";
 import { PriceListTable } from "../components/PriceListTable/PriceListTable";
 import { priceListData } from "../data/priceListconfig.";
 import type { Metadata } from "next";
@@ -34,8 +34,8 @@ export const metadata: Metadata = {
 
 export default function PriceListRyczalt() {
   return (
-    <div className={styles.containerCennik}>
-      <h1 className={styles.pageTitle}>Cennik – Ryczałt ewidencjonowany</h1>
+    <div className={styles.containerRyczalt}>
+      <h2 className={styles.title}>Cennik – Ryczałt ewidencjonowany</h2>
       <PriceListTable tableData={priceListData[0]} />
     </div>
   );

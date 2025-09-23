@@ -37,12 +37,11 @@ export const offerData: ItemOffer[] = [
     icon: "🏗️",
     text: [
       "Bezbolesny start w biznesie",
-      "Pomagamy:",
-      "Wybrać optymalną formę opodatkowania",
-      "Zarejestrować firmę w CEIDG/REGON",
-      "Wypełnić niezbędne wnioski ZUS/VAT",
-      "Dobrać kody PKD",
-      "Ustalić strategię księgową",
+      "Wybranie optymalnej formy opodatkowania",
+      "Zarejestrowanie firmy w CEIDG/REGON",
+      "Wypełnienie niezbędne wnioski ZUS/VAT",
+      "Dobranie kodów PKD",
+      "Ustalenie strategii z księgową",
       "Dla kogo? Dla przyszłych przedsiębiorców.",
     ],
   },
@@ -52,7 +51,6 @@ export const offerData: ItemOffer[] = [
     icon: "🧾",
     text: [
       "Przejrzyste rozliczenia dla mniejszych firm",
-      "Oferujemy:",
       "Rzetelne ewidencjonowanie dochodów i kosztów",
       "Rozliczenie VAT (dla czynnych podatników)",
       "Przygotowanie comiesięcznych zestawień",
@@ -67,7 +65,6 @@ export const offerData: ItemOffer[] = [
     icon: "📈",
     text: [
       "Prostsze rozliczenia – niższe podatki",
-      "W pakiecie:",
       "Prowadzenie uproszczonej ewidencji",
       "Kalkulacja stawki ryczałtu",
       "Rozliczenie PIT-28",
@@ -82,7 +79,6 @@ export const offerData: ItemOffer[] = [
     icon: "💰",
     text: [
       "Twój spokój w sezonie podatkowym",
-      "Zapewniamy:",
       "Kompleksowe rozliczenie roczne",
       "Wykorzystanie wszystkich ulg",
       "Korygowanie błędów z poprzednich lat",
@@ -97,7 +93,6 @@ export const offerData: ItemOffer[] = [
     icon: "👔",
     text: [
       "Profesjonalna obsługa pracowników",
-      "W ofercie:",
       "Prowadzenie dokumentacji kadrowej",
       "Rozliczanie list płac i ZUS",
       "Sporządzanie umów o pracę",
@@ -112,8 +107,7 @@ export const offerData: ItemOffer[] = [
     icon: "🔍",
     text: [
       "Płacisz tylko tyle, ile musisz",
-      "Oferujemy:",
-      "Analizę obecnej sytuacji podatkowej",
+      "Analiza obecnej sytuacji podatkowej",
       "Propozycje zmian w rozliczeniach",
       "Wdrażanie legalnych metod oszczędności",
       "Porównanie form opodatkowania",

@@ -66,7 +66,7 @@ export function Footer() {
             <FaFacebook size={28} />
           </a>
           <a
-            href="#"
+            href="https://www.instagram.com/biuro_rachunkowe_dpz/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Odwiedź nasz profil na Instagramie"
@@ -74,7 +74,7 @@ export function Footer() {
             <FaInstagram size={28} />
           </a>
           <a
-            href="#"
+            href="https://www.youtube.com/@biurorachunkowedpz"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Odwiedź nasz profil na YouTube"

@@ -1,4 +1,4 @@
-import styles from "../price-list.module.scss";
+import styles from "./pkpir.module.scss";
 import { PriceListTable } from "../components/PriceListTable/PriceListTable";
 import { priceListData } from "../data/priceListconfig.";
 import type { Metadata } from "next";
@@ -34,10 +34,10 @@ export const metadata: Metadata = {
 
 export default function PriceListKpir() {
   return (
-    <div className={styles.containerCennik}>
-      <h1 className={styles.pageTitle}>
+    <div className={styles.containerKpir}>
+      <h2 className={styles.title}>
         Cennik – Podatkowa Księga Przychodów i Rozchodów
-      </h1>
+      </h2>
       <PriceListTable tableData={priceListData[1]} />
     </div>
   );
